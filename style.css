@@ -1,0 +1,947 @@
+/* --- banner.css --- */
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+
+    margin-top: 70px;
+}
+
+/* Container do Carrossel */
+.banner-carrousel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Itens do Carrossel */
+.banner-item {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #0077b6, #00bcd4);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.one {
+    background-image: url("img/banner1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seg {
+    background-image: url("img/banner-sf-1.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Texto do Banner */
+.desc-banner h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.desc-banner p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* banner primeiro */
+.one-1-b {
+    padding: 10px 20px;
+    background-color: #304378;
+    margin-top: 25px;
+    border-radius: 6px;
+    width: 500px;
+}
+
+.one-1-b:hover {
+    background-color: #45578a;
+}
+
+.one-1-b a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.one-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    text-align: left;
+    margin-left: 100px;
+    width: 750px;
+}
+
+/* banner segundo */
+.seg-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    text-align: right;
+    margin-right: 100px;
+    width: 100%;
+}
+
+.seg-2-b {
+    display: none;
+}
+
+/* Botões de Navegação */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+
+    /* Banner */
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    /* Container do Carrossel */
+    .banner-carrousel {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    /* Itens do Carrossel */
+    .banner-item {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        background: linear-gradient(135deg, #0077b6, #00bcd4);
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .one {
+        background-image: url("img/banner1.png");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .seg {
+        background-image: url("img/banner-sf-1.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Texto do Banner */
+
+    .desc-banner h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+
+        margin-top: 20px;
+    }
+
+    .desc-banner p {
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* banner primeiro */
+    .one-1-b {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #2c3a5e;
+        margin-top: 25px;
+        border-radius: 6px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .one-1-b:hover {
+        background-color: #2c3a5e;
+    }
+
+    .one-1-b a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-size: 12px;
+    }
+
+    .one-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* banner segundo */
+    .seg-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Botões de Navegação */
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.041);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .seg-2-b {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #2c3a5e;
+        color: #fff;
+        margin-top: 25px;
+        border-radius: 6px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .seg-2-b a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-size: 12px;
+    }
+}
+
+/* Responsivo */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+    /* Texto do Banner */
+    .desc-banner h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .desc-banner p {
+        font-size: 16px;
+    }
+
+    .one-1 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        text-align: left;
+        margin-left: 100px;
+        width: 400px;
+    }
+
+    /* banner primeiro */
+    .one-1-b {
+        padding: 10px 20px;
+        background-color: #0e1b3f;
+        margin-top: 25px;
+        border-radius: 6px;
+        width: 400px;
+    }
+
+    /* banner segundo */
+    .seg-2 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        text-align: right;
+        margin-right: 100px;
+        width: 100%;
+    }
+
+    .seg-2-b {
+        position: relative;
+        left: 70%;
+        padding: 10px 20px;
+        background-color: green;
+        margin-top: 25px;
+        border-radius: 6px;
+        width: 540px;
+    }
+}
+
+/* --- cards.css --- */
+/* Estilos gerais para desktop */
+.cards {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.cards-banner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+
+    position: relative;
+    top: -60px;
+}
+
+.bloco {
+    background-color: #0e1b3f;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 6px;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco:hover {
+    transform: scale(1.10);
+    transition: .1s;
+}
+
+/* Estilos específicos para mobile */
+@media (max-width: 768px) {
+    .cards-banner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bloco {
+        height: 50px; /* Ajuste a altura para mobile */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloco:hover {
+        display: none;
+    }
+}
+
+
+/* --- conteudo.css --- */
+/* Conteudo- 1 */
+.maer {
+    background-color: #fff;
+}
+.conteudo-1 {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: -10rem;
+    gap: 5rem;
+}
+
+.desc-conteudo-1 {
+    overflow-y: hidden;
+    width: 50%;
+    height: 100vh;
+    margin-top: 5rem;
+}
+
+.desc-conteudo-1 h2 {
+    text-align: left;
+    font-size: 36px;
+    color: #0e1b3f;
+    margin-bottom: 10px;
+}
+
+.desc-conteudo-1 p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.button-conteudo-1 {
+    background-color: #00003cff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px 90px;
+    border-radius: 5px;
+}
+
+.img-conteudo-1 {
+    width: 50%;
+    margin-bottom: 50px;
+    margin-top: -10px;
+}
+
+/* Feed */
+
+.feedback-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #00003cff;
+
+    margin-top: -10%;
+}
+
+.feedback-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.feedback-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Cartões de feedback */
+.feedback-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feedback-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.feedback-card h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.feedback-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .feedback-container {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+}
+
+@media (max-width: 968px) {
+
+    /* Conteudo- 1 */
+    .conteudo-1 {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0rem;
+        gap: 1rem;
+    }
+
+    .desc-conteudo-1 {
+        overflow-y: hidden;
+        width: 100%;
+        height: 50vh;
+        margin-top: 1rem;
+    }
+
+    .desc-conteudo-1 h2 {
+        text-align: left;
+        font-size: 32px;
+        color: #0e1b3f;
+        margin-bottom: 10px;
+    }
+
+    .desc-conteudo-1 p {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    .button-conteudo-1 {
+        background-color: #00003cff;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 20px 50px;
+        border-radius: 5px;
+    }
+
+
+    .img-conteudo-1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-conteudo-1 img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+/* --- header.css --- */
+/* Importando fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    color: #0e1b3f;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Links do menu */
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #0e1b3f;
+    text-decoration: underline;
+}
+
+/* Botão "Fale Conosco" */
+.btn-fale {
+    background: #0e1b3f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: #fff;
+    transition: background 0.3s;
+}
+
+.btn-fale:hover {
+    background: #0e1b3f;
+}
+
+/* Ícone do menu mobile */
+.menu-icon {
+    font-size: 2rem;
+    color: #0e1b3f;
+    cursor: pointer;
+    display: none; /* Oculto no desktop */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #0e1b3f;
+        border-bottom: 1px solid ;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        transition: 0.3s;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        color: #fff;
+    }
+
+    .menu li a {
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .btn-fale {
+        margin-top: 10px;
+        background-color: #0e1b3f;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Menu ativo */
+    nav.active {
+        display: flex;
+    }
+}
+
+
+/* --- sobre.css --- */
+/* Estilo geral */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sobre-nos {
+    max-width: 800px;
+    text-align: left;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -100px;
+    /* Para que o texto fique sobre a imagem */
+    z-index: 2;
+    /* Garantir que o texto fique acima da imagem */
+}
+
+.sobre-nos h3 {
+    text-align: left;
+    font-size: 22px;
+    color: #0e1b3f;
+    margin-bottom: 10px;
+}
+
+.sobre-nos h1 {
+    text-align: left;
+    font-size: 32px;
+    margin-top: 40px;
+    font-weight: 700;
+    color: #0e1b3f;
+    margin-bottom: 20px;
+}
+
+.sobre-nos p {
+    text-align: left;
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.button-chamada a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #0e1b3f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.button-chamada a:hover {
+    background-color: #0e1b3fc6;
+}
+
+/* Estilo da imagem */
+.sobre img {
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+
+    /* Estilo geral */
+    .sobre {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sobre-nos {
+        width: 90%;
+        text-align: left;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: -100px;
+        /* Para que o texto fique sobre a imagem */
+        z-index: 2;
+        /* Garantir que o texto fique acima da imagem */
+    }
+
+    .sobre-nos h3 {
+        text-align: left;
+        font-size: 22px;
+        color: #0e1b3f;
+        margin-bottom: 10px;
+    }
+
+    .sobre-nos h1 {
+        text-align: left;
+        font-size: 32px;
+        margin-top: 40px;
+        font-weight: 700;
+        color: #0e1b3f;
+        margin-bottom: 20px;
+    }
+
+    .sobre-nos p {
+        text-align: left;
+        font-size: 16px;
+        color: #7f8c8d;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .button-chamada a {
+        display: inline-block;
+        padding: 10px 50px;
+        background-color: #0e1b3f;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+
+    .button-chamada a:hover {
+        background-color: #0e1b3fc6;
+    }
+
+    /* Estilo da imagem */
+    .sobre img {
+        width: 80%;
+        z-index: 1;
+    }
+}
+
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  width: 60px;
+  height: 60px;
+}
+
+
+/* ===== MENU MOBILE ===== */
+.menu-mobile {
+    display: none; /* Esconde o menu inicialmente */
+    position: fixed;
+    top: 0;
+    right: -100%; /* Começa fora da tela */
+    width: 70%;
+    height: 100%;
+    background: #0e1b3f;
+    z-index: 1000;
+    transition: right 0.3s ease;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-mobile.active {
+    right: 0; /* Mostra o menu quando ativo */
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.menu-mobile li {
+    margin-bottom: 20px;
+}
+
+.menu-mobile a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.botao-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.fechar-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.botao-menu-mobile {
+    display: none; /* Esconde o botão em desktop */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #0e1b3f;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/* Mostra o botão e o menu APENAS no celular */
+@media (max-width: 768px) {
+    .botao-menu-mobile {
+        display: block;
+    }
+}

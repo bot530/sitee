@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Central de Atendimento</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Estilos para a seção de Perguntas Frequentes */
+    .faq-section {
+      background-color: #f5f5f5;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-title {
+      font-size: 28px;
+      color: #0a004b;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .faq-question {
+      width: 100%;
+      background-color: #0e1b3f;
+      color: white;
+      padding: 18px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: left;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question:hover {
+      background-color: #1a1a5e;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 20px;
+    }
+    .faq-question.active::after {
+      content: '-';
+    }
+    .faq-answer {
+      padding: 20px;
+      background-color: white;
+      border-radius: 0 0 8px 8px;
+      margin-top: -5px;
+      display: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .faq-answer p {
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header class="home">
+    <div class="container">
+      <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" class="logo">Área do cliente</a>
+      <div class="menu-icon" id="menu-toggle">
+        <i class="ph ph-list"></i>
+      </div>
+      <nav>
+        <ul class="menu" id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!">Contato</a></li>
+        </ul>
+        <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" class="btn-fale">Fale conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="banner-carrousel">
+      <div class="banner-item active one">
+        <div class="desc-banner one-1">
+          <h2>Conte com nosso atendimento 24 horas, especializado para solucionar seu problema!</h2>
+          <p>Segurança e praticidade para emissão de 2ª via de boleto e antecipação.</p>
+          <div class="button-banner one-1-b">
+            <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!">
+              Clique aqui e comece sua conversa
+              <i class=""></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="banner-item seg">
+        <div class="desc-banner seg-2">
+          <h2>2ª via de boleto <br />emita sua segunda via de um jeito fácil</h2>
+          <p>Precisa da segunda via do seu boleto? <br />Agora ficou simples e rápido!</p>
+          <div class="button-banner seg-2-b">
+            <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!">
+              Solicitar meu atendimento
+              <i class="ph ph-arrow-line-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+  </section>
+
+  <section class="cards" id="home">
+    <div class="cards-banner">
+      <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" class="bloco">2ª via de boleto</a>
+      <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" class="bloco">Liquidação antecipada</a>
+      <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" class="bloco">Atualizar boleto vencido</a>
+      <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" class="bloco">Antecipar parcelas</a>
+      <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" class="bloco">Atendimento online</a>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="sobre-nos">
+      <h3>ATENÇÃO</h3>
+      <h1>Pague seu débito ao credor e não ao fraudador.</h1>
+      <p>Apresentamos algumas dicas para que você não caia em golpes. Suspeitou de mensagens, e-mails ou páginas falsas? Não clique, não baixe arquivos, e nos avise:</p>
+      <div class="button-chamada">
+        <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!">Iniciar atendimento →</a>
+      </div>
+    </div>
+    <img src="./Central de Atendimento_files/pessoa-1.png" alt="Pessoa em atendimento" />
+  </section>
+
+  <section class="maer" id="servicos">
+    <section class="conteudo-1 fade-in">
+      <div class="desc-conteudo-1">
+        <h2>Soluções na palma <br />da sua mão</h2>
+        <p>Facilite seu dia</p>
+        <p>Nós acreditamos que um bom atendimento consiste em processos simples e seguros, acessíveis onde e quando o cliente preferir.</p>
+        <br /><br />
+        <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" class="button-conteudo-1">Solicitar Boleto</a>
+      </div>
+      <div class="img-conteudo-1">
+        <img src="./Central de Atendimento_files/bonecos.png" alt="Ilustração de atendimento" />
+      </div>
+    </section>
+  </section>
+
+  <section class="feedback-section">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="feedback-container">
+      <div class="feedback-card">
+        <h3>Maria Silva</h3>
+        <p>"Ótimo atendimento! Resolvi meu problema em minutos. Super recomendo!"</p>
+      </div>
+      <div class="feedback-card">
+        <h3>João Santos</h3>
+        <p>"Muito eficiente e fácil de usar. Atendimento excelente!"</p>
+      </div>
+      <div class="feedback-card">
+        <h3>Ana Oliveira</h3>
+        <p>"Serviço rápido e confiável. Sempre utilizo e nunca tive problemas!"</p>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Menu Mobile (aparece só no celular) -->
+<div class="menu-mobile" id="menuMobile">
+    <span class="fechar-menu" id="fecharMenu">×</span>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="https://wa.me/5511967076052" class="botao-whatsapp">Fale conosco</a></li>
+    </ul>
+</div>
+
+<!-- Botão ☰ para abrir o menu (só aparece no celular) -->
+<div class="botao-menu-mobile" id="botaoMenu">☰</div>
+
+
+
+  <!-- Nova Seção de Perguntas Frequentes -->
+  <section class="faq-section">
+    <h2 class="faq-title">Perguntas Frequentes</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">O que é a 2ª via de boleto?</button>
+        <div class="faq-answer">
+          <p>A segunda via de boleto é um documento reemitido quando você perdeu o boleto original ou precisa de uma nova cópia para pagamento. É um serviço totalmente seguro e gratuito.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Como posso antecipar parcelas?</button>
+        <div class="faq-answer">
+          <p>Você pode antecipar parcelas acessando nosso portal ou entrando em contato via WhatsApp. Basta selecionar a opção de antecipação e seguir as instruções na tela. Oferecemos condições especiais para pagamento antecipado.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Quais são as formas de pagamento aceitas?</button>
+        <div class="faq-answer">
+          <p>Aceitamos diversas formas de pagamento: boleto bancário, cartão de crédito (todas as bandeiras), transferência bancária (TED/DOC/PIX) e débito automático. Para cada opção, oferecemos orientações específicas para garantir a segurança da sua transação.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Como posso entrar em contato com o suporte?</button>
+        <div class="faq-answer">
+          <p>Nosso atendimento está disponível 24 horas por dia através de múltiplos canais: WhatsApp exclusivo, chat online em nosso site, e-mail e telefone. Recomendamos o WhatsApp para respostas mais rápidas e eficientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" class="whatsapp-float" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="./Central de Atendimento_files/menu.js.download"></script>
+  <script src="./Central de Atendimento_files/banner.js.download"></script>
+  <script src="./Central de Atendimento_files/cards.js.download"></script>
+  <script src="script.js" defer></script>
+
+
+
+<script>
+  
+  // Pega os elementos do menu
+const botaoMenu = document.getElementById('botaoMenu');
+const menuMobile = document.getElementById('menuMobile');
+const fecharMenu = document.getElementById('fecharMenu');
+
+// Abre o menu quando clica no ☰
+botaoMenu.addEventListener('click', function() {
+    menuMobile.classList.add('active');
+});
+
+// Fecha o menu quando clica no ×
+fecharMenu.addEventListener('click', function() {
+    menuMobile.classList.remove('active');
+});
+
+// Fecha o menu quando clica em um link
+const linksMenu = document.querySelectorAll('.menu-mobile a');
+linksMenu.forEach(link => {
+    link.addEventListener('click', function() {
+        menuMobile.classList.remove('active');
+    });
+});
+</script>
+
+  <script>
+
+
+
+
+
+    // Script para o funcionamento das perguntas frequentes
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        const isOpen = answer.style.display === 'block';
+        
+        // Fecha todas as respostas primeiro
+        document.querySelectorAll('.faq-answer').forEach(ans => {
+          ans.style.display = 'none';
+        });
+        document.querySelectorAll('.faq-question').forEach(q => {
+          q.classList.remove('active');
+        });
+        
+        // Abre apenas a resposta clicada, se não estiver aberta
+        if (!isOpen) {
+          answer.style.display = 'block';
+          question.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+  <!-- Botão flutuante do WhatsApp -->
+ <div class="whatsapp-float">
+        <a href="https://wa.me/5511967076052?text=Ol%C3%A1%2C%20preciso%20de%20atendimento!" target="_blank" title="Fale Conosco">
+            <svg class="whatsapp-icon" width="50px" height="50px" viewBox="0 0 1219.547 1225.016">
+                <path style="fill: #E0E0E0;" d="M1041.858 178.02C927.206 63.289 774.753.07 612.325 0 277.617 0 5.232 272.298 5.098 606.991c-.039 106.986 27.915 211.42 81.048 303.476L0 1225.016l321.898-84.406c88.689 48.368 188.547 73.855 290.166 73.896h.258.003c334.654 0 607.08-272.346 607.222-607.023.056-162.208-63.052-314.724-177.689-429.463zm-429.533 933.963h-.197c-90.578-.048-179.402-24.366-256.878-70.339l-18.438-10.93-191.021 50.083 51-186.176-12.013-19.087c-50.525-80.336-77.198-173.175-77.16-268.504.111-278.186 226.507-504.503 504.898-504.503 134.812.056 261.519 52.604 356.814 147.965 95.289 95.36 147.728 222.128 147.688 356.948-.118 278.195-226.522 504.543-504.693 504.543z"></path>
+                <path style="fill: #25D366;" d="M27.875 1190.114l82.211-300.18c-50.719-87.852-77.391-187.523-77.359-289.602.133-319.398 260.078-579.25 579.469-579.25 155.016.07 300.508 60.398 409.898 169.891 109.414 109.492 169.633 255.031 169.57 409.812-.133 319.406-260.094 579.281-579.445 579.281-.023 0 .016 0 0 0h-.258c-96.977-.031-192.266-24.375-276.898-70.5l-307.188 80.548z"></path>
+                <path fill="#FFF" d="M462.273 349.294c-11.234-24.977-23.062-25.477-33.75-25.914-8.742-.375-18.75-.352-28.742-.352-10 0-26.25 3.758-39.992 18.766-13.75 15.008-52.5 51.289-52.5 125.078 0 73.797 53.75 145.102 61.242 155.117 7.5 10 103.758 166.266 256.203 226.383 126.695 49.961 152.477 40.023 179.977 37.523s88.734-36.273 101.234-71.297c12.5-35.016 12.5-65.031 8.75-71.305-3.75-6.25-13.75-10-28.75-17.5s-88.734-43.789-102.484-48.789-23.75-7.5-33.75 7.516c-10 15-38.727 48.773-47.477 58.773-8.75 10.023-17.5 11.273-32.5 3.773-15-7.523-63.305-23.344-120.609-74.438-44.586-39.75-74.688-88.844-83.438-103.859-8.75-15-.938-23.125 6.586-30.602 6.734-6.719 15-17.508 22.5-26.266 7.484-8.758 9.984-15.008 14.984-25.008 5-10.016 2.5-18.773-1.25-26.273s-32.898-81.67-46.234-111.326z"></path>
+            </svg>
+
+</body>
+</html>
